@@ -1,20 +1,23 @@
-body{
-    background-color: rgb(145, 58, 58);
+@use 'hero';
 
-    header{
-        display: flex;
-        justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
 
-        h1{
-            font-size: 60px;
-            text-align: center;
-        }
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px){
+        max-width: 80%;
     }
 
-    .container{
-        img{
-            display: block;
-            width: 100%;
-        }
+    @media (max-width: 1024px){
+        max-width: 90%;
     }
 }
